@@ -20,7 +20,7 @@ I am an Information Technology Engineering student at the Universidad Politécni
 * Designing scalable industrial network topologies.
 
 ### 📫 How to reach me
-* **LinkedIn:** (https://www.linkedin.com/in/MarcoVini13
+* **LinkedIn:** https://www.linkedin.com/in/MarcoVini13
 * **Email:** MarcoVini1311@hotmail.com
 <!--
 **MarcoVini13/MarcoVini13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
