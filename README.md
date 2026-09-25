@@ -1,7 +1,7 @@
 # Hi there, I'm Marco Vinicio! 👋
 
 ### 👨‍💻 About Me
-I am an Information Technology Engineering student at the Universidad Politécnica de San Luis Potosí (UPSLP). I am passionate about solving real-world industrial and business problems through software development, network design, and automation. I am currently seeking a professional internship (Estadía) to apply my technical skills in a high-impact corporate environment.
+I am an Information Technology Engineering student at the Universidad Politécnica de San Luis Potosí (UPSLP) and a **Certified Programming Technician**. I am passionate about solving real-world industrial and business problems through software development, network design, and automation. I am currently seeking a professional internship (Estadía) to apply my technical skills in a high-impact corporate environment.
 
 ### 🛠️ Tech Stack & Tools
 * **Programming Languages:** Java, C, C++, Python, HTML, CSS, JavaScript
