@@ -5,19 +5,18 @@ I am an Information Technology Engineering student at the Universidad Politécni
 
 ### 🛠️ Tech Stack & Tools
 * **Programming Languages:** Java, C, C++, Python, HTML, CSS, JavaScript
-* **Databases:** MySQL
-* **Tools & Infrastructure:** Cisco Packet Tracer, Arduino, Apache NetBeans, Git, Unreal Engine 4
+* **Databases:** MySQL, Access
+* **Tools & Infrastructure:** Cisco Packet Tracer, Arduino, Apache NetBeans, Git, Unreal Engine 4, Visual Studio, Blender, Microsoft Office, XAMPP
   
 ### 🏆 Certifications
 * **Cybersecurity:** Fortinet Certified Associate Cybersecurity
 * **Networking & IoT:** Cisco CCNA: Introduction to Networks, Cisco Introduction to IoT
 * **Artificial Intelligence:** Cisco Introduction to Modern AI
 * **Game Development & Simulation:** Unreal Engine Blueprints (Udemy)
+* **Data Science:** Cisco Data Science Essentials with Python
   
 ### 🚀 Currently Working On
 * Developing a robust 2D Desktop Game in Java using Object-Oriented Programming and custom mechanics.
-* Architecting an Inventory and Logistics Management System for SMEs using Java, MySQL, MVC, and DAO design patterns.
-* Designing scalable industrial network topologies.
 
 ### 📫 How to reach me
 * **LinkedIn:** https://www.linkedin.com/in/MarcoVini13
