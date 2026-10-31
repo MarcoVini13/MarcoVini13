@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth" style="scroll-padding-top: 5rem;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Marco Vinicio |</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para los íconos (GitHub, LinkedIn) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hoja de estilos CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS (CDN para facilidad en un solo archivo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#818cf8', /* Indigo 400 */
+                            DEFAULT: '#6366f1', /* Indigo 500 */
+                            dark: '#4f46e5', /* Indigo 600 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- NAV / HEADER -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white tracking-tight hover:text-brand-light transition-colors">
+                Marco Vini
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition-colors">Sobre mí</a>
+                <a href="#projects" class="hover:text-white transition-colors">Proyectos</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+            </div>
+            <!-- Mobile Menu Button (Opcional para futura expansión, por ahora oculto) -->
+            <button class="md:hidden text-slate-300 hover:text-white">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-12 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 fade-in-section">
+            
+            <!-- Hero Text -->
+            <div class="text-center md:text-left flex-1">
+                <p class="text-brand-light font-medium tracking-wide mb-3">Bienvenido, soy</p>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+                    Marco Vinicio.
+                </h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-400 mb-6">
+                    Soluciones de software para TÍ.
+                </h2>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed">
+                    Soy un <span class="text-white font-medium">Junior Software Developer e IT Specialist</span>. Me especializo en crear sistemas eficientes, desde programación orientada a objetos hasta bases de datos relacionales y análisis de datos.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-brand text-white font-medium rounded-lg hover:bg-brand-dark transition-colors shadow-lg shadow-brand/20">
+                        Mis proyectos
+                    </a>
+                    <a href="#contact" class="px-8 py-3 bg-transparent border border-slate-700 text-white font-medium rounded-lg hover:border-slate-500 hover:bg-slate-800 transition-colors">
+                        Contactame
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image Placeholder -->
+            <div class="w-64 h-64 md:w-80 md:h-80 relative flex-shrink-0 group">
+                <!-- Decoración de fondo (Marcos rotados) -->
+                <div class="absolute inset-0 bg-brand rounded-2xl rotate-6 opacity-20 group-hover:rotate-12 transition-transform duration-500"></div>
+                <div class="absolute inset-0 border-2 border-brand/50 rounded-2xl -rotate-3 group-hover:-rotate-6 transition-transform duration-500"></div>
+                
+                <div class="absolute inset-0 bg-slate-800 rounded-2xl overflow-hidden shadow-2xl z-10">
+                    <img src="Me.jpg" alt="Marco Vinicio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto fade-in-section">
+            <div class="flex items-center mb-12">
+                <h3 class="text-3xl font-bold text-white">Sobre mí</h3>
+                <div class="h-px bg-slate-700 flex-grow ml-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <p class="mb-4 leading-relaxed">
+                        Estudiante de TI orientado a resultados con una base sólida en programación orientada a objetos (Java, C++), bases de datos relacionales (MySQL) y topologías de red. 
+                    </p>
+                    <p class="mb-4 leading-relaxed">
+                        Tengo experiencia en el desarrollo de aplicaciones de escritorio utilizando patrones MVC/DAO y en la gestión de operaciones comerciales. Busco contribuir para entregar soluciones de software escalables y mantener arquitecturas de sistemas eficientes.
+                    </p>
+                    <p class="leading-relaxed">
+                        Actualmente estudio Ingeniería en Tecnologías de la Información y tengo un perfil técnico respaldado por certificaciones en ciencia de datos, ciberseguridad y redes.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Habilidades Técnicas</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <!-- Skills Badges -->
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Java</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">C / C++</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">MySQL</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">HTML / CSS / JS</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Machine Learning</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Cisco Packet Tracer</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Git / GitHub</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Arduino</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Linux</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">UE4</span>
+                        <span class="px-3 py-1 bg-brand/10 text-brand-light border border-brand/20 rounded-full text-sm font-medium">Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto fade-in-section">
+            <div class="flex items-center mb-12">
+                <h3 class="text-3xl font-bold text-white">Proyectos Destacados</h3>
+                <div class="h-px bg-slate-700 flex-grow ml-6"></div>
+            </div>
+
+            <!-- Contenedor vertical para las tarjetas de proyectos a 2 columnas -->
+            <div class="flex flex-col gap-16">
+                
+                <!-- Project 1: StockFlow (Layout inverso: Video izquierda, Texto derecha) -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand/50 transition-all duration-300 shadow-lg flex flex-col md:flex-row max-w-5xl mx-auto my-8">
+                    
+                    <!-- Media Placeholder (Video a la Izquierda) -->
+                    <div class="w-full md:w-5/12 relative min-h-[300px] md:min-h-full flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-slate-800">
+                        <!-- Overlay opcional de color de marca -->
+                        <div class="absolute inset-0 bg-brand/10 z-10 pointer-events-none"></div>
+                        
+                        <!-- Video llenando el contenedor (object-cover) -->
+                        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                            <!-- Asegúrate de poner el nombre exacto de tu archivo de video aquí -->
+                            <source src="Stock.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+
+                    <!-- Content (Derecha) -->
+                    <div class="w-full md:w-7/12 p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-brand text-3xl">
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+                                </div>
+                                <a href="https://github.com/MarcoVini13/StockFlow" target="_blank" class="text-slate-400 hover:text-white transition-colors text-2xl" title="Ver en GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand transition-colors">
+                                StockFlow – Inventory Management System
+                            </h3>
+                            <p class="text-brand text-sm font-medium mb-4">
+                                Java, MySQL, MVC Architecture
+                            </p>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Sistema de inventario de escritorio desarrollado con Java, MySQL y patrones de diseño MVC/DAO. Permite el manejo seguro de datos, operaciones CRUD dinámicas, filtros de búsqueda avanzados y control de acceso basado en roles para administradores.
+                            </p>
+                        </div>
+                        
+                        <!-- Tecnologías usadas -->
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Java</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">MySQL</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">MVC Pattern</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: IoT Dashboard (Layout inverso: Texto izquierda, Video derecha) -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand/50 transition-all duration-300 shadow-lg flex flex-col md:flex-row max-w-5xl mx-auto my-8">
+                    
+                    <!-- Content (Izquierda) -->
+                    <div class="w-full md:w-7/12 p-8 flex flex-col justify-between order-2 md:order-1">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-brand text-3xl">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <a href="https://github.com/MarcoVini13/Predictive-Maintenance-IOT" target="_blank" class="text-slate-400 hover:text-white transition-colors text-2xl" title="Ver en GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand transition-colors">
+                                IoT Dashboard
+                            </h3>
+                            <p class="text-brand text-sm font-medium mb-4">
+                                Industrial Predictive Maintenance
+                            </p>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Modelo de machine learning de mantenimiento predictivo (Random Forest) para analizar la telemetría de sensores industriales simulados. Visualizado a través de un panel interactivo en tiempo real para monitorear parámetros de salud operativa.
+                            </p>
+                        </div>
+                        
+                        <!-- Tecnologías usadas -->
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Python</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Scikit-Learn</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Streamlit</span>
+                        </div>
+                    </div>
+
+                    <!-- Media Placeholder (Video a la Derecha) -->
+                    <div class="w-full md:w-5/12 bg-slate-800 relative min-h-[300px] flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-l border-slate-800 order-1 md:order-2">
+                        <!-- Overlay opcional de color de marca -->
+                        <div class="absolute inset-0 bg-brand/10 z-10 pointer-events-none"></div>
+                        
+                        <!-- Video optimizado -->
+                        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-contain">
+                            <source src="IndustrialP.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+
+                </div>                
+
+                <!-- Project 3: Industrial IT/OT (Layout normal: Imagen izquierda, Texto derecha) -->
+                <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand/50 transition-all duration-300 shadow-lg flex flex-col md:flex-row max-w-5xl mx-auto my-8">
+                    
+                    <!-- Media Placeholder (Imagen a la Izquierda) -->
+                    <div class="w-full md:w-5/12 bg-white relative min-h-[300px] flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-slate-800">
+                        <!-- Imagen optimizada -->
+                        <img src="Cisco.png" alt="Topología de Red Industrial en Cisco Packet Tracer" class="absolute inset-0 w-full h-full object-contain p-2">
+                    </div>
+                    
+                    <!-- Content (Derecha) -->
+                    <div class="w-full md:w-7/12 p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-brand text-3xl">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <a href="https://github.com/MarcoVini13/Industrial-IT-OT-Network" target="_blank" class="text-slate-400 hover:text-white transition-colors text-2xl" title="Ver en GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand transition-colors">
+                                IT/OT Network Topology
+                            </h3>
+                            <p class="text-brand text-sm font-medium mb-4">
+                                Network Security & Architecture
+                            </p>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Diseño de arquitectura de red segura para planta industrial utilizando Cisco Packet Tracer, logrando una segregación exitosa del tráfico. Implementación de ACLs para bloquear accesos no autorizados y proteger activos críticos de maquinaria.
+                            </p>
+                        </div>
+                        
+                        <!-- Tecnologías usadas -->
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Cisco Packet Tracer</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">Networking</span>
+                            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-full border border-slate-700">ACLs / Security</span>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="py-12 px-6 bg-slate-950 border-t border-slate-900 text-center">
+        <div class="max-w-2xl mx-auto fade-in-section">
+            <h3 class="text-3xl font-bold text-white mb-6">¿Trabajamos juntos?</h3>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto">
+                Actualmente estoy buscando nuevas oportunidades. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡mi bandeja de entrada está abierta!
+            </p>
+            
+            <a href="mailto:MarcoVini1311@hotmail.com" class="inline-block px-8 py-3 bg-brand text-white font-medium rounded-lg hover:bg-brand-dark transition-colors mb-12 shadow-lg shadow-brand/20">
+                Envíame un correo
+            </a>
+
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- Enlaces reales extraídos de tu CV -->
+                <a href="https://github.com/MarcoVini13" target="_blank" class="text-slate-400 hover:text-white transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-github text-3xl"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/marcovini13" target="_blank" class="text-slate-400 hover:text-white transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-linkedin text-3xl"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </div>
+            
+            <p class="text-slate-500 text-sm">
+                Desarrollado por Marco Vinicio Almendarez Briones &copy; 2026
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
